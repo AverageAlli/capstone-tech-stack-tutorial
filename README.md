@@ -32,6 +32,17 @@ capstone-tech-stack-tutorial/
 
 ### Getting Started
 
+**🚀 For detailed setup instructions, see [Getting Started Guide](./docs/00-getting-started.md)**
+
+**Quick Docker Setup:**
+```bash
+git clone https://github.com/AverageAlli/capstone-tech-stack-tutorial.git
+cd capstone-tech-stack-tutorial
+docker-compose up -d
+```
+
+**Manual Setup:**
+
 1. **Clone the repository**
    ```bash
    git clone https://github.com/AverageAlli/capstone-tech-stack-tutorial.git
@@ -79,12 +90,20 @@ capstone-tech-stack-tutorial/
 
 ## Tutorial Sections
 
-1. [Backend Setup](./docs/01-backend-setup.md) - Creating the .NET Web API
-2. [Database Configuration](./docs/02-database-setup.md) - PostgreSQL integration
-3. [Frontend Setup](./docs/03-frontend-setup.md) - Vue.js application
-4. [API Integration](./docs/04-api-integration.md) - Connecting frontend to backend
-5. [Authentication](./docs/05-authentication.md) - User authentication flow
-6. [Deployment](./docs/06-deployment.md) - Docker and production deployment
+📚 **Complete Learning Path:**
+
+1. [**Getting Started**](./docs/00-getting-started.md) - Complete setup guide with troubleshooting
+2. [**Backend Setup**](./docs/01-backend-setup.md) - Creating the .NET Web API
+3. [**Frontend Setup**](./docs/03-frontend-setup.md) - Vue.js application development
+4. [**Deployment**](./docs/06-deployment.md) - Docker and production deployment
+
+### Quick Reference
+
+- **Backend Development**: Detailed .NET Web API creation with PostgreSQL
+- **Frontend Development**: Modern Vue.js with TypeScript and Pinia
+- **Database Integration**: Entity Framework Core with PostgreSQL
+- **Containerization**: Complete Docker setup for all services
+- **Production Ready**: CORS, error handling, validation, and documentation
 
 ## Sample Application
 

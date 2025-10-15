@@ -76,7 +76,15 @@ export const useTaskStore = defineStore('tasks', () => {
       await TaskService.updateTask(taskData);
       const index = tasks.value.findIndex(task => task.id === taskData.id);
       if (index !== -1) {
-        tasks.value[index] = { ...tasks.value[index], ...taskData };
+        // Preserve original createdAt and other required fields
+        const existingTask = tasks.value[index];
+        if (existingTask) {
+          tasks.value[index] = { 
+            ...existingTask,
+            ...taskData,
+            createdAt: existingTask.createdAt // Preserve original creation date
+          };
+        }
       }
       await fetchStats(); // Update stats
     } catch (err) {

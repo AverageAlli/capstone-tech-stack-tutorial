@@ -93,7 +93,7 @@ import { useTaskStore } from '@/stores/taskStore';
 import type { Task, TaskPriority } from '@/types/task';
 
 interface Props {
-  task?: Task;
+  task?: Task | null;
   categories: string[];
 }
 
